@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Ask a question / general discussion
+    url: https://github.com/orgs/claudeusers/discussions
+    about: For questions and general discussion, please use Discussions instead of an issue.
+  - name: 🔒 Report a security vulnerability
+    url: https://github.com/claudeusers/.github/blob/main/SECURITY.md
+    about: Please do not report security issues as public issues — see our security policy.
