@@ -1,0 +1,37 @@
+name: 💡 Resource suggestion
+description: Suggest a prompt, MCP server, tool, guide, or other resource
+labels: ["resource-suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggesting something for one of our curated lists or resource repos? Fill this out.
+  - type: input
+    id: name
+    attributes:
+      label: Name of the resource
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why should this be included?
+      description: What makes it useful for other Claude users?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: This is not my own project being self-promoted without disclosure (if it is yours, please say so above)
+          required: false
+        - label: This does not imply official Anthropic affiliation or endorsement
+          required: true
