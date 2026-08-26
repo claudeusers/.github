@@ -1,0 +1,26 @@
+name: 📦 New repo proposal
+description: Propose a new repository within the claudeusers organization
+labels: ["proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Think the org needs a new focused repo? Let's discuss it here before it's created.
+  - type: input
+    id: name
+    attributes:
+      label: Proposed repo name
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: What would this repo contain?
+    validations:
+      required: true
+  - type: textarea
+    id: overlap
+    attributes:
+      label: How is this different from existing repos in the org (or elsewhere)?
+    validations:
+      required: true
